@@ -1,0 +1,15 @@
+body{
+    background-color: black;
+    color: wheat;
+}
+ol {
+    counter-reset: lists;
+    list-style-type: none;
+  }
+  
+  li::before {
+    counter-increment: lists;
+    content: counters(lists,".") " ";
+  }
+  
+  
